@@ -12,7 +12,7 @@ export default function Home() {
     <View className="flex-1 bg-dark-background">
       <ScrollView contentContainerClassName="pt-safe-offset-10 flex-grow-1 pb-safe px-5">
         <View className="flex-row items-center mb-6 gap-5">
-          <Avatar name="S" onPress={() => {}} />
+          <Avatar name="S" showIndicator onPress={() => {}} />
           <View className="flex-row items-center gap-2">
             <Badge text="All" isActive={activeTab === 'all'} onPress={() => setActiveTab('all')} />
             <Badge
@@ -27,19 +27,16 @@ export default function Home() {
             />
           </View>
         </View>
-        <View className="flex-row">
-          <FlashList
-            data={HOME_ITEMS}
-            keyExtractor={(item, index) => item.id.toString()}
-            numColumns={2}
-            renderItem={({ item, index }) => (
-              <View
-                className={cn('flex-1', index % 2 === 0 ? 'pr-3' : '', index < 4 ? 'mb-3' : '')}>
-                <HomeItem item={item} onPress={() => {}} />
-              </View>
-            )}
-          />
-        </View>
+        <FlashList
+          data={HOME_ITEMS}
+          keyExtractor={(item, index) => item.id.toString()}
+          numColumns={2}
+          renderItem={({ item, index }) => (
+            <View className={cn('flex-1', index % 2 === 0 ? 'pr-3' : '', index < 4 ? 'mb-3' : '')}>
+              <HomeItem item={item} onPress={() => {}} />
+            </View>
+          )}
+        />
       </ScrollView>
     </View>
   );
