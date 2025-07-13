@@ -1,9 +1,9 @@
-import { Badge, HomeItem } from '@/components';
+import { Avatar, Badge, HomeItem } from '@/components';
 import { HOME_ITEMS } from '@/data/home-items';
 import { cn } from '@/utils/classnames';
 import { FlashList } from '@shopify/flash-list';
 import React, { useState } from 'react';
-import { Pressable, ScrollView, Text, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'all' | 'music' | 'podcasts'>('all');
@@ -12,9 +12,7 @@ export default function Home() {
     <View className="flex-1 bg-dark-background">
       <ScrollView contentContainerClassName="pt-safe-offset-10 flex-grow-1 pb-safe px-5">
         <View className="flex-row items-center mb-6 gap-5">
-          <Pressable className="h-10 w-10 rounded-full bg-orange-500 flex-row items-center justify-center active:opacity-40 active:scale-95 transition-all">
-            <Text className="font-extrabold text-xl text-black">M</Text>
-          </Pressable>
+          <Avatar name="S" onPress={() => {}} />
           <View className="flex-row items-center gap-2">
             <Badge text="All" isActive={activeTab === 'all'} onPress={() => setActiveTab('all')} />
             <Badge
@@ -37,7 +35,7 @@ export default function Home() {
             renderItem={({ item, index }) => (
               <View
                 className={cn('flex-1', index % 2 === 0 ? 'pr-3' : '', index < 4 ? 'mb-3' : '')}>
-                <HomeItem item={item} />
+                <HomeItem item={item} onPress={() => {}} />
               </View>
             )}
           />
