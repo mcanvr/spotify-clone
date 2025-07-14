@@ -1,3 +1,19 @@
+import {
+  PlusJakartaSans_200ExtraLight,
+  PlusJakartaSans_200ExtraLight_Italic,
+  PlusJakartaSans_300Light,
+  PlusJakartaSans_300Light_Italic,
+  PlusJakartaSans_400Regular,
+  PlusJakartaSans_400Regular_Italic,
+  PlusJakartaSans_500Medium,
+  PlusJakartaSans_500Medium_Italic,
+  PlusJakartaSans_600SemiBold,
+  PlusJakartaSans_600SemiBold_Italic,
+  PlusJakartaSans_700Bold,
+  PlusJakartaSans_700Bold_Italic,
+  PlusJakartaSans_800ExtraBold,
+  PlusJakartaSans_800ExtraBold_Italic,
+} from '@expo-google-fonts/plus-jakarta-sans';
 import { useFonts } from 'expo-font';
 import { SplashScreen, Stack } from 'expo-router';
 import { useEffect } from 'react';
@@ -8,14 +24,20 @@ import '../global.css';
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    'CircularStd-Black': require('@assets/fonts/CircularStd-Black.ttf'),
-    'CircularStd-BlackItalic': require('@assets/fonts/CircularStd-BlackItalic.ttf'),
-    'CircularStd-Bold': require('@assets/fonts/CircularStd-Bold.ttf'),
-    'CircularStd-BoldItalic': require('@assets/fonts/CircularStd-BoldItalic.ttf'),
-    'CircularStd-Book': require('@assets/fonts/CircularStd-Book.ttf'),
-    'CircularStd-BookItalic': require('@assets/fonts/CircularStd-BookItalic.ttf'),
-    'CircularStd-Medium': require('@assets/fonts/CircularStd-Medium.ttf'),
-    'CircularStd-MediumItalic': require('@assets/fonts/CircularStd-MediumItalic.ttf'),
+    PlusJakartaSans_200ExtraLight,
+    PlusJakartaSans_200ExtraLight_Italic,
+    PlusJakartaSans_300Light,
+    PlusJakartaSans_300Light_Italic,
+    PlusJakartaSans_400Regular,
+    PlusJakartaSans_400Regular_Italic,
+    PlusJakartaSans_500Medium,
+    PlusJakartaSans_500Medium_Italic,
+    PlusJakartaSans_600SemiBold,
+    PlusJakartaSans_600SemiBold_Italic,
+    PlusJakartaSans_700Bold,
+    PlusJakartaSans_700Bold_Italic,
+    PlusJakartaSans_800ExtraBold,
+    PlusJakartaSans_800ExtraBold_Italic,
   });
 
   useEffect(() => {
