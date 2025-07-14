@@ -11,7 +11,7 @@
     "generate-icons": "svgr assets/icons -d src/components/Icons --config-file .svgrrc.js"
   },
   "dependencies": {
-    "@expo-google-fonts/plus-jakarta-sans": "^0.4.1",
+    "@expo-google-fonts/outfit": "^0.4.2",
     "@expo/vector-icons": "^14.1.0",
     "@react-navigation/bottom-tabs": "^7.3.10",
     "@react-navigation/elements": "^2.3.8",

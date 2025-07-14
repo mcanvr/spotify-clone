@@ -17,7 +17,7 @@ export default function HomeItem({ item, onPress }: HomeItemProps) {
         <StyledImage className="h-full w-full absolute" source={item.image} />
       </View>
       <View className="flex-1 h-16 flex-row items-center px-3">
-        <Text numberOfLines={2} className="text-white font-bold text-sm flex-1">
+        <Text numberOfLines={2} className="text-white font-outfit-bold text-sm flex-1">
           {item.name}
         </Text>
       </View>

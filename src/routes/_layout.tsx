@@ -1,19 +1,14 @@
 import {
-  PlusJakartaSans_200ExtraLight,
-  PlusJakartaSans_200ExtraLight_Italic,
-  PlusJakartaSans_300Light,
-  PlusJakartaSans_300Light_Italic,
-  PlusJakartaSans_400Regular,
-  PlusJakartaSans_400Regular_Italic,
-  PlusJakartaSans_500Medium,
-  PlusJakartaSans_500Medium_Italic,
-  PlusJakartaSans_600SemiBold,
-  PlusJakartaSans_600SemiBold_Italic,
-  PlusJakartaSans_700Bold,
-  PlusJakartaSans_700Bold_Italic,
-  PlusJakartaSans_800ExtraBold,
-  PlusJakartaSans_800ExtraBold_Italic,
-} from '@expo-google-fonts/plus-jakarta-sans';
+  Outfit_100Thin,
+  Outfit_200ExtraLight,
+  Outfit_300Light,
+  Outfit_400Regular,
+  Outfit_500Medium,
+  Outfit_600SemiBold,
+  Outfit_700Bold,
+  Outfit_800ExtraBold,
+  Outfit_900Black,
+} from '@expo-google-fonts/outfit';
 import { useFonts } from 'expo-font';
 import { SplashScreen, Stack } from 'expo-router';
 import { useEffect } from 'react';
@@ -24,20 +19,15 @@ import '../global.css';
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    PlusJakartaSans_200ExtraLight,
-    PlusJakartaSans_200ExtraLight_Italic,
-    PlusJakartaSans_300Light,
-    PlusJakartaSans_300Light_Italic,
-    PlusJakartaSans_400Regular,
-    PlusJakartaSans_400Regular_Italic,
-    PlusJakartaSans_500Medium,
-    PlusJakartaSans_500Medium_Italic,
-    PlusJakartaSans_600SemiBold,
-    PlusJakartaSans_600SemiBold_Italic,
-    PlusJakartaSans_700Bold,
-    PlusJakartaSans_700Bold_Italic,
-    PlusJakartaSans_800ExtraBold,
-    PlusJakartaSans_800ExtraBold_Italic,
+    Outfit_100Thin,
+    Outfit_200ExtraLight,
+    Outfit_300Light,
+    Outfit_400Regular,
+    Outfit_500Medium,
+    Outfit_600SemiBold,
+    Outfit_700Bold,
+    Outfit_800ExtraBold,
+    Outfit_900Black,
   });
 
   useEffect(() => {
