@@ -12,7 +12,7 @@ export default function Home() {
     <View className="flex-1 bg-dark-background">
       <ScrollView contentContainerClassName="pt-safe-offset-10 flex-grow-1 pb-safe px-5">
         <View className="flex-row items-center mb-6 gap-5">
-          <Avatar name="S" showIndicator onPress={() => {}} />
+          <Avatar name="M" showIndicator onPress={() => {}} />
           <View className="flex-row items-center gap-2">
             <Badge text="All" isActive={activeTab === 'all'} onPress={() => setActiveTab('all')} />
             <Badge

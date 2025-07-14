@@ -8,7 +8,7 @@ export default function Avatar({ name, isDisabled, onPress, showIndicator = fals
       disabled={isDisabled}
       onPress={isDisabled ? null : onPress}
       className="h-10 w-10 rounded-full bg-orange-500 flex-row items-center justify-center active:scale-95 transition-all relative">
-      <Text className="font-extrabold text-xl text-black">
+      <Text className="font-bold text-xl text-black">
         {name.length > 1 ? name[0].toLocaleUpperCase() : name.length === 1 ? name : '?'}
       </Text>
       <Switch>
