@@ -1,3 +1,14 @@
+import {
+  Outfit_100Thin,
+  Outfit_200ExtraLight,
+  Outfit_300Light,
+  Outfit_400Regular,
+  Outfit_500Medium,
+  Outfit_600SemiBold,
+  Outfit_700Bold,
+  Outfit_800ExtraBold,
+  Outfit_900Black,
+} from '@expo-google-fonts/outfit';
 import { useFonts } from 'expo-font';
 import { SplashScreen, Stack } from 'expo-router';
 import { useEffect } from 'react';
@@ -8,14 +19,15 @@ import '../global.css';
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    'CircularStd-Black': require('@assets/fonts/CircularStd-Black.ttf'),
-    'CircularStd-BlackItalic': require('@assets/fonts/CircularStd-BlackItalic.ttf'),
-    'CircularStd-Bold': require('@assets/fonts/CircularStd-Bold.ttf'),
-    'CircularStd-BoldItalic': require('@assets/fonts/CircularStd-BoldItalic.ttf'),
-    'CircularStd-Book': require('@assets/fonts/CircularStd-Book.ttf'),
-    'CircularStd-BookItalic': require('@assets/fonts/CircularStd-BookItalic.ttf'),
-    'CircularStd-Medium': require('@assets/fonts/CircularStd-Medium.ttf'),
-    'CircularStd-MediumItalic': require('@assets/fonts/CircularStd-MediumItalic.ttf'),
+    Outfit_100Thin,
+    Outfit_200ExtraLight,
+    Outfit_300Light,
+    Outfit_400Regular,
+    Outfit_500Medium,
+    Outfit_600SemiBold,
+    Outfit_700Bold,
+    Outfit_800ExtraBold,
+    Outfit_900Black,
   });
 
   useEffect(() => {

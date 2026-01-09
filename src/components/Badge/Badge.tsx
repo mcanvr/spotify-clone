@@ -16,8 +16,8 @@ export default function Badge({ text, isActive = false, onPress, isDisabled = fa
       )}>
       <Text
         className={cn('text-sm', {
-          'font-medium text-black': isActive,
-          'font-book text-white': !isActive,
+          'font-outfit-bold text-black': isActive,
+          'font-outfit-medium text-white': !isActive,
         })}>
         {text}
       </Text>
